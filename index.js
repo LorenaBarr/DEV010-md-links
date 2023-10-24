@@ -1,7 +1,7 @@
 const fs = require('fs');
 const marked = require('marked');
 
-function analyzeLinks(markdownFilePath) {
+function analyzeLinks (markdownFilePath) {
   // Leer el contenido del archivo Markdown
   const markdownContent = fs.readFileSync(markdownFilePath, 'utf8');
 
@@ -23,5 +23,5 @@ function analyzeLinks(markdownFilePath) {
 }
 
 module.exports = {
-  analyzeLinks,
+  analyzeLinks
 };
