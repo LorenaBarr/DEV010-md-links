@@ -20,6 +20,5 @@
   "scripts": {
     "test": "jest --coverage",
     "lint": "eslint ."
-
   }
 }
