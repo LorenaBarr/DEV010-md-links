@@ -20,5 +20,9 @@
   "scripts": {
     "test": "jest --coverage",
     "lint": "eslint ."
+  },
+  "dependencies": {
+    "marked": "^9.1.2",
+    "node-fetch": "^2.6.7"
   }
 }
