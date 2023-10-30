@@ -1,7 +1,23 @@
-* Google  [Enlace a Google](https://www.google.com).
-* Youtube [Enlace a youtube](https://www.youtube.com/).
-* Laboratoria  [Enlace a Laboratiria](https://www.laboratoria.la/).
-* Github [Enlace a github](https://github.com/).
-* Github [Enlace a roto  github](https://github1.com/).
-* Google  [Enlace roto de Google](https://www1.google.com).
-* ![md-links](https://github.com/Laboratoria/bootcamp/assets/12631491/fc6bc380-7824-4fab-ab8f-7ab53cd9d0e4)
+**Ejemplos de enlaces válidos:**
+
+1. [Sitio de OpenAI](https://www.openai.com)
+2. [Markdown Guide](https://www.markdownguide.org)
+3. [GitHub](https://github.com)
+4. [Google](https://www.google.com)
+5. [YouTube](https://www.youtube.com)
+6. [Mozilla Developer Network](https://developer.mozilla.org)
+7. [Stack Overflow](https://stackoverflow.com)
+8. [Wikipedia](https://www.wikipedia.org)
+9. [Node.js](https://nodejs.org)
+10. [React](https://reactjs.org)
+
+
+**Ejemplos de enlaces con errores:**
+
+1. [Enlace incompleto](https
+2. [Texto sin enlace]()
+3. Enlace sin texto [https://www.ejemplo.com]
+4. [Markdown](https://markdownguide.org)
+5. [Repetido](https://www.openai.com)
+6. [Texto sin paréntesis]
+7. Enlace sin texto []
