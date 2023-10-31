@@ -1,5 +1,6 @@
-const mdLinks  = require('./lib/mdLinks.js');
+const mdLinks = require('./lib/mdLinks.js');
 const isLinkValid = require('./lib/validateLinks.js');
+var colors = require('colors');
 
 mdLinks('examples/ejemplo1.md')
   .then((links) => {
@@ -7,16 +8,17 @@ mdLinks('examples/ejemplo1.md')
     return Promise.all(linkPromises);
   })
   .then((linksWithStatus) => {
-    linksWithStatus.forEach((link, index) => {
-      console.log(`Enlace ${index + 1}:`);
-      console.log(`- Texto: ${link.text}`);
-      console.log(`- URL: ${link.href}`);
-      console.log(`- Válido: ${link.isValid}`);  
-      if (!link.isValid) {
-        console.log(`- Estado: ${link.status} ${link.statusText}`);
-      }
-      console.log('');
-    });
+    console.table(linksWithStatus);
+    // linksWithStatus.forEach((link, index) => {
+    //   console.log(`Enlace ${index + 1}:`);
+    //   console.log(`- Texto: ${link.text}`);
+    //   console.log(`- URL: ${link.href}`);
+    //   console.log(`- Válido: ${link.isValid}`);  
+    //   if (!link.isValid) {
+    //     console.log(`- Estado: ${link.status} ${link.statusText}`);
+    //   }
+    //   console.log('');
+    // });
   })
   .catch((error) => {
     console.error(error);
