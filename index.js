@@ -1,6 +1,7 @@
 const mdLinks = require('./lib/mdLinks.js');
 const isLinkValid = require('./lib/validateLinks.js');
-var colors = require('colors');
+const colors = require('colors');
+
 
 mdLinks('examples/ejemplo1.md')
   .then((links) => {
