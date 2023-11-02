@@ -18,6 +18,7 @@
 2. [Texto sin enlace]()
 3. Enlace sin texto [https://www.ejemplo.com]
 4. [Markdown](https://markdownguide.org)
-5. [Repetido](https://www.openai.com)
+5. [Sitio de OpenAI](https://www.openai.com)
 6. [Texto sin paréntesis]
 7. Enlace sin texto []
+8. [Wikipedia Lorena Barrera](https://es.wikipedia.org/wiki/LorenaBarrera)
