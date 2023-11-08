@@ -28,9 +28,20 @@ mdLinks('examples/ejemplo1.md')
         Texto: link.text,
         URL: link.href,
         Válido: link.isValid ? 'True' : 'False',
-        Estado: link.status ? `${link.status} ${link.statusText}` : 'N/A',
+        Estado: link.status !== undefined ? `${link.status} ${link.statusText}` : '404 Not Found',
       };
 
+      if (!link.href){
+        rowData.Estado = 'N/A';
+      }
+
+      // if (link.status === 404) {
+      //   rowData.Estado = '404 Not Found';
+      // } else if (!link.href) {
+      //   rowData.Estado = 'N/A';
+      // } else {
+      //   rowData.Estado = link.status !== undefined ? `${link.status} ${link.statusText}` : 'N/A';
+      // }
       table.addRow(rowData); // Agrega una fila a la tabla
     });
 
