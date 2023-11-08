@@ -35,31 +35,6 @@ mdLinks('examples/ejemplo1.md')
     });
 
     table.printTable(); // Imprime la tabla
-
-
-  // .then((linksWithStatus) => {
-  //   console.table(linksWithStatus);
-  //   linksWithStatus.forEach((link, index) => {
-  //     console.log(`Enlace ${index + 1}:`);
-  //     console.log(`- Texto: ${link.text}`.bgBrightGreen); 
-  //     console.log(`- URL: ${link.href}` .bgBrightWhite);
-  //     console.log(`- Válido: ${link.isValid}`.bgBrightCyan); 
-  //     if (!link.isValid) {
-  //       console.log(`- Estado: ${link.status} ${link.statusText}`.bgBrightMagenta); // Aplicar color
-  //     }
-  //     console.log('');
-  //   });
-  // })
-    // linksWithStatus.forEach((link, index) => {
-    //   console.log(`Enlace ${index + 1}:`);
-    //   console.log(`- Texto: ${link.text}`);
-    //   console.log(`- URL: ${link.href}`);
-    //   console.log(`- Válido: ${link.isValid}`);  
-    //   if (!link.isValid) {
-    //     console.log(`- Estado: ${link.status} ${link.statusText}`);
-    //   }
-    //   console.log('');
-    // });
   })
   .catch((error) => {
     console.error(error);

@@ -16,9 +16,8 @@
 
 1. [Enlace incompleto](https
 2. [Texto sin enlace]()
-3. Enlace sin texto [https://www.ejemplo.com]
-4. [Markdown](https://markdownguide.org)
-5. [Sitio de OpenAI](https://www.openai.com)
-6. [Texto sin paréntesis]
-7. Enlace sin texto []
-8. [Wikipedia Lorena Barrera](https://es.wikipedia.org/wiki/LorenaBarrera)
+3. [Markdown](https://markdownguide.org)
+4. [Sitio de OpenAI](https://wwww.openaii/com)
+5. [Texto sin paréntesis]
+6. Enlace sin texto []
+7. [Wikipedia Lorena Barrera](https://es.wikipedia.org/wiki/LorenaBarrera)
