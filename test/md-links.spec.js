@@ -1,5 +1,5 @@
-const mdLinks = require('../lib/mdLinks'); 
-
+const mdLinks = require('../lib/mdLinks');
+const { describe, it } = require('@jest/globals');
 
 describe('mdLinks', () => {
   it('debería resolver un arreglo con 3 links para un archivo .md con 3 links', () => {
@@ -17,7 +17,18 @@ describe('mdLinks', () => {
       expect(error).toBe('La ruta no existe.');
     });
   });
+
+  it('debería determinar que una ruta es absoluta', () => {
+    const isAbsolute = mdLinks.isAbsolute('/path/to/some/file');
+    expect(isAbsolute).toBe(true);
+  });
+
+  it('debería determinar que una ruta es relativa', () => {
+    const isAbsolute = mdLinks.isAbsolute('../lib/mdLinks');
+    expect(isAbsolute).toBe(false);
+  });
 });
+
 
 
 
