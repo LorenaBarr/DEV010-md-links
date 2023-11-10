@@ -27,6 +27,16 @@ describe('mdLinks', () => {
       expect(error).toBe('La ruta no existe.');
     });
   });
+
+  it('debería determinar que una ruta es absoluta', () => {
+    const isAbsolute = mdLinks.isAbsolute('/path/to/some/file');
+    expect(isAbsolute).toBe(true);
+  });
+
+  it('debería determinar que una ruta es relativa', () => {
+    const isAbsolute = mdLinks.isAbsolute('../lib/mdLinks');
+    expect(isAbsolute).toBe(false);
+  });
 });
 
 describe('convertToAbsolutePath', () => {
@@ -68,6 +78,7 @@ describe('doesFileExist', () => {
     }
   });
 });
+
 
 
  
