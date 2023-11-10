@@ -97,5 +97,10 @@ describe('analyzeLinks', () => {
 });
 
 
+// Construir la ruta completa al archivo 'testFile.md' usando '__dirname'
+//const filePath = path.resolve(__dirname, 'testFile.md');
 
+// 'path.resolve' combina '__dirname' con 'testFile.md' para obtener la ruta completa
+// '__dirname' proporciona la ruta del directorio que contiene el script actual
+// 'filePath' ahora contiene la ruta completa al archivo 'testFile.md'
 
