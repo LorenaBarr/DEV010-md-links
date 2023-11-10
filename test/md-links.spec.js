@@ -1,8 +1,9 @@
 const path = require('path');
 const isAbsolutePath = require('../lib/mdLinks');
-const convertToAbsolutePath = require('../lib/mdLinks'); 
-const doesFileExist = require('../lib/mdLinks'); 
-const mdLinks = require('../lib/mdLinks'); 
+const convertToAbsolutePath = require('../lib/mdLinks');
+const doesFileExist = require('../lib/mdLinks');
+const mdLinks = require('../lib/mdLinks');
+const analyzeLinks = require('../lib/mdLinks');
 const exp = require('constants');
 const fs = require('fs').promises;
 
@@ -79,7 +80,22 @@ describe('doesFileExist', () => {
   });
 });
 
+describe('analyzeLinks', () => {
+  it('debería analizar correctamente los enlaces en un archivo', async () => {
+    const filePath = path.resolve(__dirname, 'testFile.md');
+    const result = await analyzeLinks(filePath);
 
 
- 
+    expect(Array.isArray(result)).toBe(true);
+    expect(result.length).toBeGreaterThan(0);
+    expect(result[0]).toHaveProperty('href');
+    expect(result[0]).toHaveProperty('text');
+    expect(result[0]).toHaveProperty('file');
+  });
+
+
+});
+
+
+
 
