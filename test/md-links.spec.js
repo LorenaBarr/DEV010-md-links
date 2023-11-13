@@ -1,13 +1,6 @@
-//const path = require('path');
-// const isAbsolutePath = require('../lib/mdLinks');
-// const convertToAbsolutePath = require('../lib/mdLinks');
-// const doesFileExist = require('../lib/mdLinks');
 const mdLinks = require('../lib/mdLinks');
-// const analyzeLinks = require('../lib/mdLinks');
-
-
-//const mdLinks = require('../lib/mdLinks');
-// const { isAbsolutePath, convertToAbsolutePath, doesFileExist, mdLinks, analyzeLinks } = require('../lib/mdLinks');
+const analyzeLinks = require('../lib/mdLinks');
+const doesFileExist = require('../lib/mdLinks');
 const { describe, it } = require('@jest/globals');
 
 //test de mdlinks devuelve el array
@@ -27,61 +20,51 @@ describe('mdLinks', () => {
     });
   });
 });
-// hasta aca pasan los test :(
-
-// describe('convertToAbsolutePath', () => {
-//   it('Debería retornar la ruta absoluta si es relativa', () => {
-//     const relativePath = 'test/pruebastest/testFile.md';
-//     const absolutePath = path.resolve(relativePath);
-//     expect(convertToAbsolutePath(relativePath)).toBe(absolutePath);
-//   });
-// });
-
-// describe('isAbsolutePath', () => {
-//   it('debería retornar la misma ruta si es absoluta', () => {
-//     const absolutePath = 'C:/Users/LOREN/DEV010-md-links/test/pruebastest/testFile.md';
-//     expect(isAbsolutePath(absolutePath)).toBe(absolutePath);
-//   });
-// });
-
-// describe('doesFileExist', () => {
-//   it('debería resolver true si el archivo existe', async () => {
-//     const fileExist = 'C:/Users/LOREN/DEV010-md-links/test/pruebastest/testFile.md';
-//     try {
-//       const result = await doesFileExist(fileExist);
-//       expect(result).toBe(true);
-//     } catch (error) {
-//       fail('La promesa debería resolverse, pero se rechazó');
-//     }
-//   });
-
-//   it('Debería rechazar con un error si el archivo no existe', async () => {
-//     const notFileExist = 'ruta/inexistente/al/archivo.txt';
-//     try {
-//       await doesFileExist(notFileExist);
-//       fail('La promesa debería rechazarse');
-//     } catch (error) {
-//       expect(error instanceof Error).toBe(true);
-//       expect(error.message).toBe('The path does not exist');
-//     }
-//   });
-// });
-
-// describe('analyzeLinks', () => {
-//   it('debería analizar correctamente los enlaces en un archivo', async () => {
-//     const filePath = path.resolve(__dirname, 'testFile.md');
-//     const result = await analyzeLinks(filePath);
+//hasta aca pasan los test :(
 
 
-//     expect(Array.isArray(result)).toBe(true);
-//     expect(result.length).toBeGreaterThan(0);
-//     expect(result[0]).toHaveProperty('href');
-//     expect(result[0]).toHaveProperty('text');
-//     expect(result[0]).toHaveProperty('file');
-//   });
+describe('doesFileExist', () => {
+  it('debería resolver true si el archivo existe', async () => {
+    const fileExist = 'C:/Users/LOREN/DEV010-md-links/test/pruebastest/testFile.md';
+    try {
+      const result = await doesFileExist(fileExist);
+      expect(result).toBe(true);
+    } catch (error) {
+      fail('La promesa debería resolverse, pero se rechazó');
+    }
+  });
+
+  it('Debería rechazar con un error si el archivo no existe', async () => {
+    const notFileExist = 'ruta/inexistente/al/archivo.txt';
+    try {
+      await doesFileExist(notFileExist);
+      fail('La promesa debería rechazarse');
+    } catch (error) {
+      expect(error instanceof Error).toBe(true);
+      expect(error.message).toBe('El archivo no existe.');
+    }
+  });
+});
 
 
-// });
+
+
+
+describe('analyzeLinks', () => {
+  it('debería analizar correctamente los enlaces en un archivo', async () => {
+    const filePath = path.resolve(__dirname, 'testFile.md');
+    const result = await analyzeLinks(filePath);
+
+
+    expect(Array.isArray(result)).toBe(true);
+    expect(result.length).toBeGreaterThan(0);
+    expect(result[0]).toHaveProperty('href');
+    expect(result[0]).toHaveProperty('text');
+    expect(result[0]).toHaveProperty('file');
+  });
+
+
+});
 
 
 // Construir la ruta completa al archivo 'testFile.md' usando '__dirname'
