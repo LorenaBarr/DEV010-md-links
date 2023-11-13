@@ -1,4 +1,5 @@
-const mdLinks = require('./lib/mdLinks.js');
+const { mdLinks } = require('./lib/mdLinks.js');
+
 const isLinkValid = require('./lib/validateLinks.js');
 // eslint-disable-next-line
 const colors = require('colors');
@@ -8,6 +9,7 @@ const { Table } = require('console-table-printer');
 
 mdLinks('examples/ejemplo1.md')
   .then((links) => {
+    console.log(links);
     const linkPromises = links.map((link) => isLinkValid(link));
     return Promise.all(linkPromises);
   })
@@ -20,7 +22,7 @@ mdLinks('examples/ejemplo1.md')
     table.addColumn({ name: 'URL', alignment: 'left', color: 'magenta', format: colors.magenta });
     table.addColumn({ name: 'Válido', alignment: 'left', color: 'green', format: colors.green });
     table.addColumn({ name: 'Estado', alignment: 'left', color: 'yellow', format: colors.yellow });
-    
+
 
     linksWithStatus.forEach((link, index) => {
       const rowData = {
@@ -31,7 +33,7 @@ mdLinks('examples/ejemplo1.md')
         Estado: link.status !== undefined ? `${link.status} ${link.statusText}` : '404 Not Found',
       };
 
-      if (!link.href){
+      if (!link.href) {
         rowData.Estado = 'N/A';
       }
 
