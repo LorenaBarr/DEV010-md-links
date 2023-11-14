@@ -32,6 +32,8 @@
   },
   "jest": {
     "testEnvironment": "node",
-    "setupFilesAfterEnv": ["C:/Users/LOREN/DEV010-md-links/test/setupTests.js"]
+    "setupFilesAfterEnv": [
+      "C:/Users/LOREN/DEV010-md-links/test/setupTests.js"
+    ]
   }
 }
