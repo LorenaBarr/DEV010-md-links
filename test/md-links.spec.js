@@ -1,4 +1,5 @@
 const { mdLinks, analyzeLinks, doesFileExist } = require('../lib/mdLinks');
+const path = require('path');
 const { describe, it } = require('@jest/globals');
 
 //test de mdlinks devuelve el array
