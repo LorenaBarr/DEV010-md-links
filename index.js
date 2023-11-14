@@ -5,9 +5,16 @@ const isLinkValid = require('./lib/validateLinks.js');
 const colors = require('colors');
 // eslint-disable-next-line
 const { Table } = require('console-table-printer');
+const directoryPath = ('c:/Users/LOREN/DEV010-md-links/examples');
 
 
-mdLinks('examples/ejemplo1.md')
+// mdLinks('examples/ejemplo1.md')
+//   .then((links) => {
+//     console.log(links);
+//     const linkPromises = links.map((link) => isLinkValid(link));
+//     return Promise.all(linkPromises);
+//   })
+mdLinks(directoryPath)
   .then((links) => {
     console.log(links);
     const linkPromises = links.map((link) => isLinkValid(link));
