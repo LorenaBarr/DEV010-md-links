@@ -5,7 +5,7 @@ const { describe, it } = require('@jest/globals');
 
 //test de mdlinks devuelve el array
 describe('mdLinks', () => {
-  it('debería resolver un arreglo con 3 links para un archivo .md con 3 links', () => {
+  it('should resolve an array with 3 links for a .md file with 3 links', () => {
     return mdLinks('test/pruebastest').then((links) => {
       // Comprueba que el resultado sea un arreglo
       expect(Array.isArray(links)).toBe(true);
@@ -15,26 +15,26 @@ describe('mdLinks', () => {
   });
 });
 // Prueba para verificar que se rechace la promesa si la extensión no es .md
-it('debería rechazar la promesa si la extensión no es .md', () => {
+it('should reject the promise if the extension is not .md', () => {
   // Ruta de un archivo que sabes que no es .md
   const nonMdFilePath = 'ruta/a/archivo.txt';
 
   // Llamada a la función mdLinks con la ruta no .md
   return mdLinks(nonMdFilePath).catch(error => {
     // Verificación de que la promesa fue rechazada con el mensaje de error esperado
-    expect(error).toBe('La ruta no existe.');  // Corregir esta línea
+    expect(error).toBe('The route does not exist.');  // Corregir esta línea
   });
 });
 
-// Prueba para verificar que se rechace la promesa si la extensión no es .md
-it('debería rechazar la promesa si la extensión no es .md', () => {
+// Prueba para verificar que se rechace la promesa si la extensión no es .md directorio
+it('should reject the promise if the extension is not .md', () => {
   // Ruta de un archivo que sabes que no es .md
   const nonMdFilePath = 'C:/Users/LOREN/DEV010-md-links/test/pruebastest';
 
   // Llamada a la función mdLinks con la ruta no .md
   return mdLinks(nonMdFilePath).catch(error => {
     // Verificación de que la promesa fue rechazada con el mensaje de error esperado
-    expect(error).toBe('El archivo no es de tipo Markdown.');
+    expect(error).toBe('The file is not of type Markdown.');
   });
 });
 
@@ -42,7 +42,7 @@ it('debería rechazar la promesa si la extensión no es .md', () => {
 // Descripción de las pruebas para la función doesFileExist
 describe('doesFileExist', () => {
   // Prueba para verificar si la función devuelve true cuando el archivo existe
-  it('debería retornar true si el archivo existe', () => {
+  it('should return true if the file exists', () => {
     // Ruta de un archivo que sabes que existe (puedes adaptar esto según tu estructura de archivos)
     const existingFilePath = 'test/pruebastest/testFile.md';
 
@@ -55,7 +55,7 @@ describe('doesFileExist', () => {
   });
 
   // Prueba para verificar si la función devuelve false cuando el archivo no existe
-  it('debería retornar false si el archivo no existe', () => {
+  it('should return false if the file does not exist', () => {
     // Ruta de un archivo que sabes que no existe (puedes adaptar esto según tu estructura de archivos)
     const nonExistingFilePath = 'ruta/inexistente/archivo.txt';
 
@@ -71,7 +71,7 @@ describe('doesFileExist', () => {
 // Descripción de las pruebas para la función getMdFilesInDirectory
 describe('getMdFilesInDirectory', () => {
   // Prueba para verificar si la función devuelve una lista de archivos .md en un directorio
-  it('debería retornar una lista de archivos .md en el directorio', () => {
+  it('should return a list of .md files in the directory', () => {
     // Ruta de un directorio que contiene archivos .md (ajusta esto según tu estructura de archivos)
     const directoryPath = 'C:/Users/LOREN/DEV010-md-links/test/pruebastest';
 
@@ -95,7 +95,7 @@ describe('getMdFilesInDirectory', () => {
 
 describe('analyzeLinks', () => {
   // Prueba para verificar si la función maneja adecuadamente la lectura de un archivo
-  it('debería analizar los enlaces en el archivo correctamente', () => {
+  it('should parse links in file correctly', () => {
     // Ruta de un archivo (ajusta esto según tu estructura de archivos)
     const filePath = 'ruta/del/archivo.md';
 

@@ -25,23 +25,23 @@ mdLinks(directoryPath)
 
     // Configura el formato de las columnas
     table.addColumn({ name: 'Index', alignment: 'left', color: 'white', format: colors.white });
-    table.addColumn({ name: 'Texto', alignment: 'left', color: 'cyan', format: colors.cyan });
+    table.addColumn({ name: 'Text', alignment: 'left', color: 'cyan', format: colors.cyan });
     table.addColumn({ name: 'URL', alignment: 'left', color: 'magenta', format: colors.magenta });
-    table.addColumn({ name: 'Válido', alignment: 'left', color: 'green', format: colors.green });
-    table.addColumn({ name: 'Estado', alignment: 'left', color: 'yellow', format: colors.yellow });
+    table.addColumn({ name: 'Validate', alignment: 'left', color: 'green', format: colors.green });
+    table.addColumn({ name: 'Status', alignment: 'left', color: 'yellow', format: colors.yellow });
 
 
     linksWithStatus.forEach((link, index) => {
       const rowData = {
         Index: index + 1,
-        Texto: link.text,
+        Text: link.text,
         URL: link.href,
-        Válido: link.isValid ? 'True' : 'False',
-        Estado: link.status !== undefined ? `${link.status} ${link.statusText}` : '404 Not Found',
+        Validate: link.isValid ? 'True' : 'False',
+        Status: link.status !== undefined ? `${link.status} ${link.statusText}` : '404 Not Found',
       };
 
       if (!link.href) {
-        rowData.Estado = 'N/A';
+        rowData.Status = 'N/A';
       }
 
       // if (link.status === 404) {
