@@ -38,8 +38,6 @@ it('debería rechazar la promesa si la extensión no es .md', () => {
   });
 });
 
- 
-
 
 // Descripción de las pruebas para la función doesFileExist
 describe('doesFileExist', () => {
