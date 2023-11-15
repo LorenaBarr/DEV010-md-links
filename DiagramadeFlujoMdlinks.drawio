@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-23T15:21:34.218Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="qIkzSnT11Rz6QgkzXHfY" version="22.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-15T02:42:41.474Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="-JqQoXHDW4XFeX9dc7GU" version="22.1.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="880" dy="438" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
       <root>
@@ -46,7 +46,7 @@
         <mxCell id="5NOvwHoaOpePXuEnYOnJ-24" value="Promesa" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#6d8764;fontColor=#ffffff;strokeColor=#3A5431;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="324" y="65" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Dn2DRP14wFJcbNcXX0DV-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.35;entryY=-0.012;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="5NOvwHoaOpePXuEnYOnJ-42" edge="1" target="5NOvwHoaOpePXuEnYOnJ-23">
+        <mxCell id="Dn2DRP14wFJcbNcXX0DV-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.35;entryY=-0.012;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="5NOvwHoaOpePXuEnYOnJ-42" target="5NOvwHoaOpePXuEnYOnJ-23" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="40" y="880" as="targetPoint" />
             <Array as="points">
@@ -55,7 +55,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="5NOvwHoaOpePXuEnYOnJ-42" value="Error" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#ffcccc;strokeColor=#36393d;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="5NOvwHoaOpePXuEnYOnJ-42" value="Error/False" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#ffcccc;strokeColor=#36393d;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="70" y="410" width="90" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Dn2DRP14wFJcbNcXX0DV-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="5NOvwHoaOpePXuEnYOnJ-48" target="5NOvwHoaOpePXuEnYOnJ-52" edge="1">
@@ -82,7 +82,7 @@
         <mxCell id="Dn2DRP14wFJcbNcXX0DV-59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="5NOvwHoaOpePXuEnYOnJ-5" target="Dn2DRP14wFJcbNcXX0DV-22" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="5NOvwHoaOpePXuEnYOnJ-5" value="Leer archivo" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;rounded=0;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="5NOvwHoaOpePXuEnYOnJ-5" value="Validar archivo" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;shadow=0;strokeWidth=1;spacing=6;spacingTop=-4;rounded=0;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="424" y="650" width="120" height="37.5" as="geometry" />
         </mxCell>
         <mxCell id="Dn2DRP14wFJcbNcXX0DV-2" value="Transformar en absoluta" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
