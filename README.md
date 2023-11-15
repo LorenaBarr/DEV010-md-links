@@ -101,7 +101,7 @@ convertToAbsolutePath y isAbsolutePath: Funciones utilitarias para trabajar con 
 
 ## 5. Pruebas Unitarias
 El proyecto incluye un conjunto de pruebas para las funciones mdLinks, isLinkValid, doesFileExist, getMdFilesInDirectory, y analyzeLinks. Las pruebas también contribuyeron a alcanzar una cobertura cercana al 100%.
-[Resultado de Pruebas Unitarias](https://drive.google.com/file/d/1peQu3xvrdo3GosrErhV9OsGtbeMFDrcm/view?usp=sharing)
+![Resultado de Pruebas](Resultadostest.png)
 ## 6. Tecnologías Aplicadas
 JavaScript: Implementa funcionalidad para analizar el texto ingresado y mostrar resultados.
 Node.js: Un entorno de ejecución de JavaScript en el lado del servidor.
