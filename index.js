@@ -5,7 +5,7 @@ const isLinkValid = require('./lib/validateLinks.js');
 const colors = require('colors');
 // eslint-disable-next-line
 const { Table } = require('console-table-printer');
-const directoryPath = ('c:/Users/LOREN/DEV010-md-links/examples');
+const directoryPath = ('D:/Proyectos/DEV010-md-links/examples'); 
 
 
 // mdLinks('examples/ejemplo1.md')
